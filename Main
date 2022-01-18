@@ -39,7 +39,9 @@ public class Hippodrome {
     }
 
     public void move(){
-
+        for (Horse h : horses) {
+            h.move();
+        }
     }
 
     public void print(){
@@ -51,12 +53,6 @@ public class Horse {
     private String name;
     private double speed;
     private double distance;
-
-    public Horse(String name, double speed, double distance){
-        this.name = name;
-        this.speed = speed;
-        this.distance = distance;
-    }
 
     public String getName() {
         return name;
@@ -81,7 +77,18 @@ public class Horse {
     public void setDistance(double distance) {
         this.distance = distance;
     }
+
+    public Horse(String name, double speed, double distance) {
+        this.name = name;
+        this.speed = speed;
+        this.distance = distance;
+    }
+
+    public void move(){
+
+    }
+
+    public void print(){
+
+    }
 }
-
-
-
