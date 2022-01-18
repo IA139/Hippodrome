@@ -20,6 +20,8 @@ public class Hippodrome {
         horses.add(horse1);
         horses.add(horse2);
         horses.add(horse3);
+        
+        game.run();
     }
 
     public List<Horse> getHorses(){
